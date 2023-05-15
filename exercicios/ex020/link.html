@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*  
+        Pseudo Classe ==> : <==
+        Pseudo Elemento ==> :: <==
+        */
+
+        body  {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+        a:hover  {
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: '[link]';
+            color: blue;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li><a href="https://google.com">Google</a></li>
+    <li><a href="https://youtube.com" rel="external">Youtube</a></li>
+    <li><a href="https://twitter.com">Twitter</a></li>
+</body>
+</html>

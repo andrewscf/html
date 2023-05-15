@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+    
+    
+ }
+
+ :root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor5: #063d1e;
+ }
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #3cd882,#1c633b);
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.514);
+    padding: 5px;
+    margin: -10px;
+
+    color: white;
+}
+
+header > section> h1 {
+    text-align: center;
+    
+}
+header > section > p {
+    text-align: center;
+}
+
+header > section > div {
+    font-weight: bold;
+    font-size: small;
+    padding: 10px 1px 1px 10px;
+
+    display: inline-block;
+}
+
+body {
+    background-color:var(--cor1);
+}
+main {
+    line-height: 1.5em;
+    background-color: white;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+}
+main > h1 {
+    padding: 20px;
+    margin: 10px;
+    font-family: 'idroid';
+    color: var(--cor5);
+}
+main > h2{
+    margin: 10px;
+    font-family: "idroid";
+    background-color: #c8ecd7;
+    color: var(--cor5);
+}
+main > p {
+    text-indent: 1em;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > p#bugdroid {
+    display: block; /* para fazer funcionar o margin auto */
+    margin: auto;
+    max-width: 320px;
+}
+
+div.video{
+    position: relative;
+    margin: 15px 0px 15px 0px;
+    height: 0px;
+    padding-bottom: 59%;
+    background-color: var(--cor5);
+    text-align: center;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+p#quer {
+    background-color:var(--cor3);
+    font-weight: bold;
+    color: white;
+    border-radius: 1em 1em 0em 0em;
+    padding: 6px;
+    
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    text-indent: 1em
+}
+
+article > div {
+    background-color: var(--cor1);
+    margin: 0px 0px 20px 0px;
+    border-radius: 1em;
+    padding-bottom: 5px;
+}
+ul {
+    margin: auto;
+    display: inline-block;
+}
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+main > picture{
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+}
