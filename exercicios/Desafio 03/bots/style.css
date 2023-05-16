@@ -1,0 +1,121 @@
+@charset "UFT-8";
+
+@font-face { 
+    font-family: 'idroid';
+    src: url(fonts/Flynn.otf) format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}    
+
+:root {
+    --cor1: #020046;
+    --cor2: #1553D4;
+    --cor3: #23ABEB;
+    --cor4: #15C9D4;
+    --cor5: #15D4CB;
+    --corC1: #EB9023;
+    --corC2: #9E5600;
+ }
+
+
+header {
+    background-color: var(--cor1);
+    background-image: url(imagens/topo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-top: 20px;
+    margin: 0px;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+#fixo {
+    background-color: #020046;
+    color: var(--corC2);
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+
+h1 {
+    color: var(--corC2);
+    font-family: 'idroid', cursive;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.13);
+    font-size: 5vw;
+}
+
+body {
+    font-family: cursive;
+    background-color: white;
+    text-indent: 1em;
+    margin: 0px;
+    max-width: 1000px;
+    
+    
+}
+
+header p{
+    padding: 10px;
+    display: inline;
+}
+main {
+    background-color: white;
+
+    
+}
+
+
+section div{
+    height: 90vh;
+    width: 100vw;
+}
+
+p {
+    width: 200px;
+    padding: 20px;
+    font-size: 2.5vh;
+    margin: 20px;
+}
+
+div#img01 {
+    padding: 10px;
+    background-image: url(imagens/imh1.png);
+    background-position: center center;
+}
+
+div#img02 {
+    padding: 10px;
+    background-image: url(imagens/img2.png);
+    background-position: center center;
+}
+
+p.imagem {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 1px black;
+}
+
+div.imagem{
+    box-shadow:inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+
+footer {
+    width: 100%;
+    color: var(--cor1);
+    background-color: var(--corC1);
+    font-size: 13px;
+    
+    text-align: center;
+}
+div#fixo p:hover{
+    background-color: #EB9023;
+    color: #020046;
+    
+}
+
+
