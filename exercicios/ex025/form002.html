@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="" method="get">
+            <p>
+                <label for="iusu">Usuário:</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+            </p>
+            <p>
+                <label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen" required
+                minlength="8">
+            </p>
+            <p>
+                <label for="itel">Telelfone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
+    </fieldset>
+
+    <form action="cadastro.py" method="get">
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basket</label>
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futeboll</label>
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+        
+            <input type="radio" name="sexo" id="isxmas">
+            <label for="ismas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel"> Nível de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2"> 
+            </p>
+            <p>
+                <label for="ifoto">Foto</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof">
+                <datalist id="iprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem </label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
