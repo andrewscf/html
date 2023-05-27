@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Static positioning (default)
+        Significa que cada elemento flui de acordo como deveria em uma página (de cima para baixo) 
+        
+        
+        Relative Positioning
+        Significa que usará a posição de default (static) e se moverá em relação a ela (quando aplicado movimento left top...)
+        
+        Absolute Positioning
+        Se posicionará relativamente ao seu mais próximo antecedente relativo
+        (Ele acompanha o antecedente relativo e pode ser adicionado posicionamento left top right...)
+        Se não tiver um antecedente relativo ele se posicionará no topo direito da página
+
+        Z-Index 
+        Determina qual elemento será mostrado por cima
+
+        Fixed Positioning
+        Se posicionará relativamente ao top do browser
+    */
+
+  .blue-box{
+    background-color: blue;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 200px;
+    top: 200px;
+  }
+  .red-circle {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+  }
+  div{
+    background-color: blue;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

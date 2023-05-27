@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Clique em mim</div>
+    <p>Outro paragráfo</p>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+        p1.style.color = 'blue'
+
+        document.write(p1.innerText)
+
+        var a = window.document.getElementById('area')
+        //a.addEventListener('click', clicar)
+        //a.addEventListener('onmouseenter', entrar)
+        // a.addEventListener('onmouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'aquamarine'
+        }
+
+
+
+    </script>
+</body>
+</html>

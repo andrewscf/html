@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer sair comigo</title>
+    <style>
+        body {
+            background-color: black;
+
+        }
+        #sim{
+            display: block;
+            background-color: rgba(0, 128, 0, 0.603);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            height: 25px;
+            width: 50px;
+            position: absolute;
+            top: 25vh;
+            left: 37vw;
+        }
+        #nao{
+            display: block;
+            background-color: rgba(255, 0, 0, 0.603);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            height: 25px;
+            width: 50px;
+            position: absolute;
+            top: 25vh;
+            left: 52vw;
+        }
+        #pergunta{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="pergunta">
+        Pam, quer sair comigo?
+    </div>
+    <div id="sim" onclick="sim()">
+        Sim
+    </div>
+    <div id="nao" onclick="nao()">
+        Não
+    </div>
+    <script>
+        var bsim = window.document.getElementById('sim')
+        var bnao = window.document.getElementById('nao')
+        function nao(){
+            bnao.style.top = (Math.random()*90) + 'vh'
+            bnao.style.left = (Math.random()*90) + 'vw'
+            
+        }
+        function sim(){
+            window.alert("S2")
+        }
+    </script>
+</body>
+</html>
