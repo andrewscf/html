@@ -7,7 +7,7 @@
     <title>Quer sair comigo</title>
     <style>
         body {
-            background-color: black;
+            background-color: rgba(29, 25, 25, 0.61);
 
         }
         #sim{
@@ -16,10 +16,10 @@
             color: white;
             border-radius: 5px;
             text-align: center;
-            height: 25px;
-            width: 50px;
+            height: 40px;
+            width: 60px;
             position: absolute;
-            top: 20vh;
+            top: 25vh;
             left: 37vw;
         }
         #nao{
@@ -28,8 +28,8 @@
             color: white;
             border-radius: 5px;
             text-align: center;
-            height: 25px;
-            width: 50px;
+            height: 40px;
+            width: 60px;
             position: absolute;
             top: 25vh;
             left: 52vw;
@@ -40,7 +40,12 @@
             color: white;
         }
         p {
-            background-color: rgb(2, 2, 2);
+            background-color: rgba(0, 0, 0, 0);
+            color: rgba(29, 25, 25, 0);
+        }
+        button {
+            margin: auto;
+            box-shadow: inset;
         }
     </style>
 </head>
@@ -48,12 +53,12 @@
     <div id="pergunta">
         Gabi, quer sair comigo?
     </div>
-    <div id="sim" onclick="sim()">
-        Sim
-    </div>
-    <div id="nao" onclick="nao()">
-        Talvez
-    </div>
+    <button id="sim" onclick="location.href='https://imgur.com/qeHkQ0W.jpg'">
+        <text>Sim</text>
+    </button>
+    <button id="nao" onclick="nao()">
+        <text>Talvez</text>
+    </button>
     <p>
         Mouse pos: <b><span id="mouse-pos"></span></b>
     </p>
@@ -84,7 +89,7 @@
         bnaoPos = { x: naoleft, y: naotop };
         mousePosText.textContent = `(${(mousePos.x/window.innerWidth)*100}, ${(mousePos.y/window.innerHeight)*100})`;
         naoPosText.textContent = `(${bnaoPos.x}, ${bnaoPos.y})`
-        if (Math.abs((mousePos.x/window.innerWidth)*100 - naoleft) < 8 && (Math.abs((mousePos.y/window.innerHeight)*100-naotop)) < 8) {
+        if (Math.abs((mousePos.x/window.innerWidth)*100 - naoleft) < 10 && (Math.abs((mousePos.y/window.innerHeight)*100-naotop)) < 10) {
             naotop =  (Math.random()*90)
             naoleft = (Math.random()*90)
             bnao.style.top = naotop + 'vh'
